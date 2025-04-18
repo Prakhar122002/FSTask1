@@ -1,0 +1,173 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "FSTask",
+    "collectionId": "b79fccbe-7748-462a-b569-26ede6bd4a92",
+    "dateExported": "2025-04-18T13:10:42.678Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "4cfb0b45-59d4-4e8a-8a1e-5f511368b225",
+            "name": "Auth",
+            "containerId": "",
+            "created": "2025-04-18T09:18:18.227Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "b83cd2ac-f8ff-4773-8679-9a353080c425",
+            "name": "Policies",
+            "containerId": "",
+            "created": "2025-04-18T09:18:23.627Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "667ead28-bd61-46cb-9727-7a04dc2f7e25",
+            "colId": "b79fccbe-7748-462a-b569-26ede6bd4a92",
+            "containerId": "4cfb0b45-59d4-4e8a-8a1e-5f511368b225",
+            "name": "Login",
+            "url": "http://localhost:3600/api/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-04-18T09:18:31.349Z",
+            "modified": "2025-04-18T10:13:22.278Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"example@email.com\",\n  \"password\": \"123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ba8e17a7-a4dd-4425-b46b-381afdea0d15",
+            "colId": "b79fccbe-7748-462a-b569-26ede6bd4a92",
+            "containerId": "4cfb0b45-59d4-4e8a-8a1e-5f511368b225",
+            "name": "Sign Up",
+            "url": "http://localhost:3600/api/auth/createuser",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-04-18T09:18:37.344Z",
+            "modified": "2025-04-18T09:35:24.872Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"Alex\",\n  \"lastName\": \"Prince\",\n  \"email\": \"example@email.com\",\n  \"dateOfBirth\": \"18-04-2025\",\n  \"zipCode\": \"000000\",\n  \"password\": \"123456789\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "f21ac967-9669-41ef-8f91-579e454ec665",
+            "colId": "b79fccbe-7748-462a-b569-26ede6bd4a92",
+            "containerId": "4cfb0b45-59d4-4e8a-8a1e-5f511368b225",
+            "name": "Get User Details",
+            "url": "http://localhost:3600/api/auth/getuser",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-04-18T09:18:46.867Z",
+            "modified": "2025-04-18T12:01:20.670Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgwMjI3NDg5MTYzOWMzOTk1OTQwMTdlIn0sImlhdCI6MTc0NDk3MTYwNH0.Sw7KdMDfgzKvk3xTV1ACvhBldqpHShCf0QYekzmLKFI"
+                }
+            ]
+        },
+        {
+            "_id": "528e2d63-9c7e-4288-b2e5-a5c35905b3ce",
+            "colId": "b79fccbe-7748-462a-b569-26ede6bd4a92",
+            "containerId": "b83cd2ac-f8ff-4773-8679-9a353080c425",
+            "name": "Add Policy",
+            "url": "http://localhost:3600/api/policies/addpolicy",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2025-04-18T10:41:07.160Z",
+            "modified": "2025-04-18T10:59:22.045Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgwMjI3NDg5MTYzOWMzOTk1OTQwMTdlIn0sImlhdCI6MTc0NDk3MTYwNH0.Sw7KdMDfgzKvk3xTV1ACvhBldqpHShCf0QYekzmLKFI"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"insuranceType\": \"Life Insurance\",\n  \"firstName\": \"Prakhar\",\n  \"lastName\": \"Mahori\",\n  \"email\": \"example@email.com\",\n  \"dateOfBirth\": \"2002-02-01\",\n  \"zipCode\": \"000000\",\n  \"coverageType\": \"Full Coverage\",\n  \"coverageAmount\": \"200000\",\n  \"deductiblePreferance\": \"500\",\n  \"smokerStatus\": \"Yes\",\n  \"anyHealthConditions\": \"No\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ad1bc513-c3cc-40ee-bc2f-666d39670afe",
+            "colId": "b79fccbe-7748-462a-b569-26ede6bd4a92",
+            "containerId": "4cfb0b45-59d4-4e8a-8a1e-5f511368b225",
+            "name": "Edit User Details",
+            "url": "http://localhost:3600/api/auth/edituser",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2025-04-18T11:55:22.139Z",
+            "modified": "2025-04-18T12:00:12.360Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgwMjI3NDg5MTYzOWMzOTk1OTQwMTdlIn0sImlhdCI6MTc0NDk3MTYwNH0.Sw7KdMDfgzKvk3xTV1ACvhBldqpHShCf0QYekzmLKFI"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"zipCode\": \"000000\"\n  \n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e586e0fb-e15f-4777-ba3f-7fbd28a57006",
+            "colId": "b79fccbe-7748-462a-b569-26ede6bd4a92",
+            "containerId": "b83cd2ac-f8ff-4773-8679-9a353080c425",
+            "name": "Get Policies",
+            "url": "http://localhost:3600/api/policies/fetchallpolicies",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-04-18T10:59:49.482Z",
+            "modified": "2025-04-18T11:00:41.852Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgwMjI3NDg5MTYzOWMzOTk1OTQwMTdlIn0sImlhdCI6MTc0NDk3MTYwNH0.Sw7KdMDfgzKvk3xTV1ACvhBldqpHShCf0QYekzmLKFI"
+                }
+            ]
+        },
+        {
+            "_id": "a8b6ca9f-d519-4516-a8a8-8139e2d7c902",
+            "colId": "b79fccbe-7748-462a-b569-26ede6bd4a92",
+            "containerId": "4cfb0b45-59d4-4e8a-8a1e-5f511368b225",
+            "name": "Delete User Account",
+            "url": "http://localhost:3600/api/auth/deleteuser",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2025-04-18T12:06:16.264Z",
+            "modified": "2025-04-18T12:06:34.169Z",
+            "headers": [
+                {
+                    "name": "auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjgwMjI3NDg5MTYzOWMzOTk1OTQwMTdlIn0sImlhdCI6MTc0NDk3MTYwNH0.Sw7KdMDfgzKvk3xTV1ACvhBldqpHShCf0QYekzmLKFI"
+                }
+            ]
+        }
+    ],
+    "ref": "oMe6I0f6nLrqEq1-qzk8Um1BDQl6f8CWSqcwqYBvkkuVK3Al6-VkhYf4IEvgtrXqqvVfThXZ3SEcyrGvd-tEfA"
+}
